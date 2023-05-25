@@ -1,7 +1,7 @@
 @extends('layouts/main')
 @section('content')
 <div class="container">
-    <table class="table" style="color: brown">
+    <table class="table">
         <thead>
             <th>Nome</th>
             <th>Descrizione</th>
@@ -11,6 +11,7 @@
             <tr>
                 <td>{{$wineyard->name}}</td>
                 <td>{{$wineyard->description}}</td>
+                {{-- <td><a href="{{route('wineyard.show', $wineyard->id)}}">Apri</a></td> --}}
             </tr>
             @endforeach
             </tbody>
